@@ -152,7 +152,7 @@ fn main() {
         ("16BITMODE", "Unknown"),
         ("NOT64BITMODE", "Unknown"),
         ("SGX", "Skylake"), // https://en.wikipedia.org/wiki/Software_Guard_Extensions
-        ("DQI", "Unknown"), // Couldn't find a reference
+        ("DQI", "Skylake"), // http://www.scc.acad.bg/ncsa/articles/library/Library2016_Supercomputers-at-Work/IntelXeonPhi_Publications/Best-Practices-for-Vectorization.pdf (page 6)
         ("BWI", "Unknown"), // Looks like a Xeon-only Knights Landing+ extension? - https://reviews.llvm.org/D26306
         ("PFI", "Unknown"), // Knights Landing - https://software.intel.com/en-us/blogs/2013/avx-512-instructions
         ("VLX", "Unknown"), // Couldn't find a reference
