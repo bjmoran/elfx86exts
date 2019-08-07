@@ -123,7 +123,7 @@ fn main() {
         ("ADX", "Broadwell"), // https://en.wikipedia.org/wiki/Intel_ADX
         ("AVX", "Sandy Bridge"), // https://en.wikipedia.org/wiki/Advanced_Vector_Extensions
         ("AVX2", "Haswell"),  // https://en.wikipedia.org/wiki/Advanced_Vector_Extensions
-        ("AVX512", "Unknown"), // It's complicated. https://en.wikipedia.org/wiki/Advanced_Vector_Extensions
+        ("AVX512", "Skylake"), // Found in Skylake binaries. No Knight's Landing here.
         ("BMI", "Haswell"),    // https://en.wikipedia.org/wiki/Bit_Manipulation_Instruction_Sets
         ("BMI2", "Haswell"),   // https://en.wikipedia.org/wiki/Bit_Manipulation_Instruction_Sets
         ("CMOV", "Pentium Pro"), // https://en.wikipedia.org/wiki/X86_instruction_listings
@@ -143,7 +143,7 @@ fn main() {
         ("SSE41", "Penryn"), // https://en.wikipedia.org/wiki/SSE4
         ("SSE42", "Nehalem"), // https://en.wikipedia.org/wiki/SSE4
         ("SSE4A", "Unknown"), // AMD-only - https://en.wikipedia.org/wiki/SSE4
-        ("SSSE3", "Unknown"), // Merom, but I don't know where that goes in the CPU list
+        ("SSSE3", "Skylake"), // Found in Skylake binaries. No Merom here.
         ("PCLMUL", "Intel Core"), // https://software.intel.com/en-us/articles/intel-carry-less-multiplication-instruction-and-its-usage-for-computing-the-gcm-mode/
         ("XOP", "Unknown"),       // AMD-only - https://en.wikipedia.org/wiki/XOP_instruction_set
         ("CDI", "Unknown"), // Knights Landing - https://software.intel.com/en-us/blogs/2013/avx-512-instructions
@@ -153,11 +153,11 @@ fn main() {
         ("NOT64BITMODE", "Unknown"),
         ("SGX", "Skylake"), // https://en.wikipedia.org/wiki/Software_Guard_Extensions
         ("DQI", "Skylake"), // http://www.scc.acad.bg/ncsa/articles/library/Library2016_Supercomputers-at-Work/IntelXeonPhi_Publications/Best-Practices-for-Vectorization.pdf (page 6)
-        ("BWI", "Unknown"), // Looks like a Xeon-only Knights Landing+ extension? - https://reviews.llvm.org/D26306
+        ("BWI", "Skylake"), // Found in Skylake binaries. No Knight's Landing here.
         ("PFI", "Unknown"), // Knights Landing - https://software.intel.com/en-us/blogs/2013/avx-512-instructions
-        ("VLX", "Unknown"), // Couldn't find a reference
+        ("VLX", "Skylake"), // Found in Skylake binaries.
         ("SMAP", "Broadwell"), // https://en.wikipedia.org/wiki/Supervisor_Mode_Access_Prevention
-        ("NOVLX", "Unknown"), // Couldn't find a reference
+        ("NOVLX", "Skylake"), // Found in Skylake binaries. No Knight's Landing here.
     ]
     .iter()
     .cloned()
