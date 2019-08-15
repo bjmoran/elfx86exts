@@ -129,7 +129,7 @@ fn main() {
         ("CMOV", "Pentium Pro"), // https://en.wikipedia.org/wiki/X86_instruction_listings
         ("F16C", "Ivy Bridge"), // https://en.wikipedia.org/wiki/F16C
         ("FMA", "Haswell"),    // https://en.wikipedia.org/wiki/FMA_instruction_set
-        ("FMA4", "Unknown"), // Not supported by Intel? https://en.wikipedia.org/wiki/FMA_instruction_set
+        ("FMA4", "Haswell"), // AMD version of FMA, so approximate to Haswell
         ("FSGSBASE", "Unknown"), // ???
         ("HLE", "Haswell"), // Part of TSX - https://en.wikipedia.org/wiki/Transactional_Synchronization_Extensions
         ("MMX", "Pentium"), // https://en.wikipedia.org/wiki/MMX_(instruction_set)
