@@ -157,7 +157,7 @@ fn main() {
         ("PFI", "Unknown"), // Knights Landing - https://software.intel.com/en-us/blogs/2013/avx-512-instructions
         ("VLX", "Skylake"), // Found in Skylake binaries.
         ("SMAP", "Broadwell"), // https://en.wikipedia.org/wiki/Supervisor_Mode_Access_Prevention
-        ("NOVLX", "Skylake"), // Found in Skylake binaries. No Knight's Landing here.
+        ("NOVLX", "Haswell"), // Found in Haswell binaries.
     ]
     .iter()
     .cloned()
