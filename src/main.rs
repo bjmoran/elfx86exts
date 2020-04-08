@@ -143,7 +143,7 @@ fn main() {
         ("SSE41", "Penryn"), // https://en.wikipedia.org/wiki/SSE4
         ("SSE42", "Nehalem"), // https://en.wikipedia.org/wiki/SSE4
         ("SSE4A", "Unknown"), // AMD-only - https://en.wikipedia.org/wiki/SSE4
-        ("SSSE3", "Skylake"), // Found in Skylake binaries. No Merom here.
+        ("SSSE3", "Intel Core"), // https://en.wikipedia.org/wiki/SSSE3#History
         ("PCLMUL", "Intel Core"), // https://software.intel.com/en-us/articles/intel-carry-less-multiplication-instruction-and-its-usage-for-computing-the-gcm-mode/
         ("XOP", "Unknown"),       // AMD-only - https://en.wikipedia.org/wiki/XOP_instruction_set
         ("CDI", "Unknown"), // Knights Landing - https://software.intel.com/en-us/blogs/2013/avx-512-instructions
